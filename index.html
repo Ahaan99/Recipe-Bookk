@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Book</h1>
+        <div class="form-container">
+            <h2>New Recipe</h2>
+            <form id="recipe-form">
+                <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+                <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+                <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+                <select id="recipe-type" required>
+                    <option value="" disabled selected>Select Recipe Type</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Dessert">Dessert</option>
+                </select>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+        <div class="recipe-list">
+            <h2>Recipes</h2>
+            <div id="recipes"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
